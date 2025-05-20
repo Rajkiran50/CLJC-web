@@ -1,0 +1,434 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: rgb(3, 7, 50);
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.church-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(3, 7, 50);
+  white-space: nowrap;
+}
+
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  color: rgb(3, 7, 50);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size:larger;
+}
+
+nav a:hover {
+  /*text-decoration: underline;*/
+  color: white;
+  background-color: #FF0000;  /* YouTube Red */
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+ .link-button {
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #220635;
+      background-color:rgb(70, 199, 31); /* Initial blue color */
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .link-button:hover {
+      background-color: rgb(199, 199, 5); /* Darker blue on hover */
+    }
+.hero {
+  height: 400px;              /* increase height */
+  padding: 80px 20px;         /* space inside */
+  background-image: url('bgc.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;              /* center content vertically */
+  flex-direction: column;
+  justify-content: center;
+}
+.scrolling-message {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  top: 70px;
+  color: #f9f5f5;
+  padding: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  position:absolute;
+}
+
+.scrolling-message p { 
+  display: inline-block;
+  padding-right: 100%;
+  animation:scroll-right 8s linear infinite 
+  
+}
+
+.hero {
+  position: relative;
+  padding: 100px 0; /* Adjust as needed */
+  text-align: center;
+}
+
+.circle-images {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.circle-image {
+  width: 150px;         /* adjust size */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.right {
+  align-self: flex-end;
+}
+.bottom-image {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.bottom-image img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  opacity: 0.5; /* Slight transparency */
+}
+
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  filter: invert(1); /* Make icons white */
+}
+
+/* Gmail */
+.gmail-btn {
+  background-color: #4f38ac; /* Gmail red */
+}
+.gmail-btn:hover {
+  background-color: #a8362d;
+}
+
+/* WhatsApp */
+.whatsapp-btn {
+  background-color: #25D366;
+}
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* YouTube */
+.youtube-btn {
+  background-color: #FF0000;
+}
+.youtube-btn:hover {
+  background-color: #cc0000;
+}
+
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    /* Section Styling */
+#cloud.white-section {
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  padding: 30px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eaecef;
+  text-align: center;
+   max-height: 800px;
+}
+
+/* Heading Styling */
+#cloud h2 {
+  font-size: 2.8rem;
+  color: #eef2f5;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+#cloud p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 25px auto;
+  color: #fefeff;
+}
+
+/* Image Container Styling */
+.cloud-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Image Item */
+.image-item {
+  background: #030a41dd;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  max-width: 300px;
+}
+
+/* Images */
+.image-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* Download Link */
+.download-link {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Download Button */
+.btn-download {
+  background-color: #1d80d6;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #1f469b;
+}
+
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.5; }
+}
+
+.ministry-section {
+  
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 40px 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(110, 196, 34, 0.3);
+}
+
+.ministry-section h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #75da2d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #020c0f;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.ministry-paragraph {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  background-color:white;
+  padding: 15px;
+  border-left: 5px solid #eee30f;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.ministry-paragraph:hover {
+  background-color:#dae3e3;
+}
+
+
+footer {
+  background-color: whitesmoke;
+  color: rgb(20, 8, 91);
+  text-align: center;
+  padding: 20px;
+}
+
+.social-media a {
+  background-image: radial-gradient( circle farthest-corner at 50.3% 47.3%,  rgba(113,42,92,1) 0.1%, rgba(40,25,46,1) 90% );
+  text-decoration: none;
+  margin-left: 10px;
+}
+.contact-section {
+      background-image: radial-gradient( circle farthest-corner at 50.3% 47.3%,  rgba(113,42,92,1) 0.1%, rgba(40,25,46,1) 90% );;
+      padding: 40px 20px;
+      
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* White Card Container */
+    .contact-card {
+      background: rgb(255, 254, 254);
+      color: #ededf4;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      padding: 30px 40px;
+      box-shadow: 0 8px 20px rgba(92, 20, 235, 0.3);
+      box-sizing: border-box;
+    }
+
+    /* Paragraph Highlight */
+.contact-card p {
+  box-shadow: 0 6px 15px rgba(13, 32, 67, 0.6), 0 0 10px rgba(236, 6, 117, 0.3);
+  transition: background 0.3s ease;
+  background-image: radial-gradient(
+    circle farthest-corner at 6.3% 21.8%,
+    rgba(236, 6, 117, 1) 0%,
+    rgba(13, 32, 67, 1) 90%
+  );
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 1.4;
+
+  /* ✨ Box shadow using darker tones */
+  
+}
+
+
+    .contact-card p:hover {
+      background-color: #03121e; /* Slightly darker on hover */
+    }
+
+    /* Section Headings */
+    .contact-card h3 {
+      color: #010710;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: 1.3rem;
+      user-select: none;
+    }
+
+    /* Stylish UL */
+    .contact-card ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 25px;
+    }
+
+    .contact-card ul li {
+      background-image: radial-gradient(
+  circle farthest-corner at 6.3% 21.8%,
+  rgba(236, 6, 117, 1) 0%,
+  rgba(13, 32, 67, 1) 90%
+);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 25px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 1rem;
+      box-shadow: 0 2px 5px rgba(14, 54, 88, 0.5);
+      transition: background 0.3s ease;
+    }
+
+    .contact-card ul li:hover {
+      background-image: radial-gradient(
+  circle farthest-corner at 6.3% 21.8%,
+  rgba(236, 6, 117, 1) 0%,
+  rgba(13, 32, 67, 1) 90%
+);
+      cursor: default;
+    }
+    
